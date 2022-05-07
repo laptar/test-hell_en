@@ -30,7 +30,6 @@
 
 .modal {
 	position: relative;
-	overflow-y: scroll;
 	margin: auto;
 	padding: 40px;
 	max-width: 450px;
@@ -40,10 +39,12 @@
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	transition: transform 500ms ease;
+	@include mq(mobile-only) {
+		overflow-y: scroll;
+	}
 	@include mq(desktop) {
-		overflow: auto;
 		max-width: 528px;
-		max-height: 581px;
+		max-height: 650px;
 	}
 
 	&__close {

@@ -24,6 +24,9 @@
 	&__descr--accent {
 		color: var(--brand-color);
 	}
+	@include mq(mobile-only) {
+		transform: scale(0.665);
+	}
 }
 
 .logo-light {

@@ -155,8 +155,8 @@ svg {
 @media screen and (max-width: 767.98px) and (orientation: landscape) {
   .logo-lendscape {
     position: fixed;
-    top: 80px;
-    right: 20px;
+    top: 33px;
+    right: 60px;
   }
 }
 
@@ -247,6 +247,12 @@ svg {
 
 .logo__descr--accent {
   color: var(--brand-color);
+}
+
+@media screen and (max-width: 767.98px) {
+  .logo {
+    transform: scale(0.665);
+  }
 }
 
 .logo-light {
@@ -379,7 +385,6 @@ svg {
 
 .modal {
   position: relative;
-  overflow-y: scroll;
   margin: auto;
   padding: 40px;
   max-width: 450px;
@@ -390,11 +395,16 @@ svg {
   transition: transform 500ms ease;
 }
 
+@media screen and (max-width: 767.98px) {
+  .modal {
+    overflow-y: scroll;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .modal {
-    overflow: auto;
     max-width: 528px;
-    max-height: 581px;
+    max-height: 650px;
   }
 }
 
