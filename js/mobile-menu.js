@@ -17,5 +17,6 @@
 
 		body.classList.toggle("body-fixed");
 		logo.classList.toggle("logo-light");
+		logo.classList.toggle("logo-lendscape");
 	});
 })();

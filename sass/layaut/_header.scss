@@ -17,7 +17,7 @@
 		align-items: flex-start;
 		position: fixed;
 		flex-direction: column;
-		padding: 108px 20px 0 20px;
+		padding: 108px 20px 20px 20px;
 		width: 100vw;
 		height: 100vh;
 		background-color: var(--bg-color-menu);
@@ -26,9 +26,20 @@
 			display: flex;
 			overflow-y: scroll;
 		}
+		@include mq(mobile-only-land) {
+			padding: 20px 15px;
+		}
 	}
 	@include mq(tablet-only) {
 		margin-left: auto;
+	}
+}
+
+.logo-lendscape {
+	@include mq(mobile-only-land) {
+		position: fixed;
+		top: 80px;
+		right: 20px;
 	}
 }
 
@@ -66,5 +77,10 @@
 	}
 	@include mq(desktop) {
 		display: none;
+	}
+	@include mq(mobile-only-land) {
+		position: fixed;
+		right: 20px;
+		top: 40px;
 	}
 }

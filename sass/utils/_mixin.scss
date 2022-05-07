@@ -8,6 +8,10 @@
 		@media screen and (max-width: #{$tablet - 0.02}) {
 			@content;
 		}
+	} @else if $screen == mobile-only-land {
+		@media screen and (max-width: #{$tablet - 0.02}) and (orientation: landscape) {
+			@content;
+		}
 	} @else if $screen == mobile-small {
 		@media screen and (max-width: #{$mobile - 0.02}) {
 			@content;
