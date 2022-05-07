@@ -1,0 +1,25 @@
+.nav {
+	margin-right: 60px;
+	&__list {
+		display: flex;
+		// flex-direction: column;
+		--indent: 40px;
+	}
+	&__item {
+		--items: 4;
+	}
+	&__link {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.21;
+		text-transform: uppercase;
+		color: var(--primay-text-color);
+		&:hover,
+		&:focus {
+			color: var(--brand-color);
+		}
+	}
+	@include mq(notDesktop) {
+		display: none;
+	}
+}
