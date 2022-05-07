@@ -3,9 +3,68 @@
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 33px;
+	@include mq(tablet-only) {
+		justify-content: flex-start;
+	}
 }
 
 .header__menu {
+	top: 0;
+	right: 0;
 	display: flex;
 	align-items: center;
+	@include mq(mobile-only) {
+		align-items: flex-start;
+		position: fixed;
+		flex-direction: column;
+		padding: 108px 20px 0 20px;
+		width: 100vw;
+		height: 100vh;
+		background-color: var(--bg-color-menu);
+		display: none;
+		&.is-open {
+			display: flex;
+			overflow-y: scroll;
+		}
+	}
+	@include mq(tablet-only) {
+		margin-left: auto;
+	}
+}
+
+.header__btn {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	@include mq(tablet) {
+		margin: 0;
+	}
+}
+
+.menu-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	background-color: transparent;
+	fill: var(--btn-menu-color);
+	& .menu-btn__icon--menu {
+		opacity: 1;
+	}
+	& .menu-btn__icon--close {
+		opacity: 0;
+	}
+	&.is-open .menu-btn__icon--menu {
+		opacity: 0;
+	}
+	&.is-open .menu-btn__icon--close {
+		opacity: 1;
+		fill: var(--second-text-color);
+	}
+	@include mq(tablet-only) {
+		margin-left: 34px;
+	}
+	@include mq(desktop) {
+		display: none;
+	}
 }

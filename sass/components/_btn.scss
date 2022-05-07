@@ -21,6 +21,6 @@
 .btn--light {
 	@extend .btn--accent;
 	color: var(--brand-color);
-	background-color: var(--second-text-color);
+	background-color: transparent;
 	border: 2px solid var(--brand-color);
 }
