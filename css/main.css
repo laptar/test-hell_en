@@ -618,14 +618,14 @@ svg {
   width: 61px;
   height: 63px;
   margin-right: 15px;
-  background-image: linear-gradient(transparent, transparent), url(../images/advantages/frame_tab.png);
+  background-image: url(../images/advantages/frame_tab.png);
   background-size: contain;
   background-origin: border-box;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .advant__frame {
-    background-image: linear-gradient(transparent, transparent), url(../images/advantages/frame@2x_tab.png);
+    background-image: url(../images/advantages/frame@2x_tab.png);
   }
 }
 
@@ -633,13 +633,13 @@ svg {
   .advant__frame {
     width: 102px;
     height: 104px;
-    background-image: linear-gradient(transparent, transparent), url(../images/advantages/frame_des.png);
+    background-image: url(../images/advantages/frame_des.png);
   }
 }
 
 @media screen and (min-width: 1366px) and (min-device-pixel-ratio: 2), screen and (min-width: 1366px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1366px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1366px) and (min-resolution: 192dpi), screen and (min-width: 1366px) and (min-resolution: 2dppx) {
   .advant__frame {
-    background-image: linear-gradient(transparent, transparent), url(../images/advantages/frame@2x_des.png);
+    background-image: url(../images/advantages/frame@2x_des.png);
   }
 }
 

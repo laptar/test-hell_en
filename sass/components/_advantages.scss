@@ -33,22 +33,18 @@
 	width: 61px;
 	height: 63px;
 	margin-right: 15px;
-	background-image: linear-gradient(transparent, transparent),
-		url(../images/advantages/frame_tab.png);
+	background-image: url(../images/advantages/frame_tab.png);
 	@include mq(retina) {
-		background-image: linear-gradient(transparent, transparent),
-			url(../images/advantages/frame@2x_tab.png);
+		background-image: url(../images/advantages/frame@2x_tab.png);
 	}
 	background-size: contain;
 	background-origin: border-box;
 	@include mq(desktop) {
 		width: 102px;
 		height: 104px;
-		background-image: linear-gradient(transparent, transparent),
-			url(../images/advantages/frame_des.png);
+		background-image: url(../images/advantages/frame_des.png);
 		@include mq(retina) {
-			background-image: linear-gradient(transparent, transparent),
-				url(../images/advantages/frame@2x_des.png);
+			background-image: url(../images/advantages/frame@2x_des.png);
 		}
 	}
 }
