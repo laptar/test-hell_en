@@ -1,9 +1,9 @@
 .advant__container {
-	margin-top: 45px;
-	margin-bottom: 45px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 	@include mq(desktop) {
-		margin-top: 100px;
-		margin-bottom: 130px;
+		padding-top: 100px;
+		padding-bottom: 130px;
 	}
 	@include mq(mobile-only) {
 		padding-left: 52px;
