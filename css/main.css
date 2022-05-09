@@ -221,6 +221,7 @@ svg {
 }
 
 .logo {
+  display: block;
   color: var(--title-text-color);
 }
 
