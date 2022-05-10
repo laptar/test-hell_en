@@ -1,0 +1,20 @@
+.benefits {
+	background-color: var(--bg-color-second);
+}
+
+.benefits__list {
+	counter-reset: section;
+	background-color: var(--bg-color-primary);
+}
+
+.bnfits__item {
+  &::before {
+		// margin-bottom: 5px;
+		// line-height: 1.21;
+		color: var(--brand-color);
+		counter-increment: section;
+		content: "\268A 0"counter(section);
+		@include mq(desktop) {
+			// line-height: 1.65;
+		}
+}

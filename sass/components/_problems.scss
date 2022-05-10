@@ -33,8 +33,9 @@
 
 .problems__list {
 	--indent: 15px;
-	padding: 19px 14px 19px 30px;
 	counter-reset: section;
+	padding: 19px 14px 19px 30px;
+
 	background-color: var(--bg-color-primary);
 	@include mq(tablet) {
 		--indent: 8px;
