@@ -1,10 +1,31 @@
 .benefits {
 	background-color: var(--bg-color-second);
+	&__container {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		@include mq(tablet) {
+			padding-top: 50px;
+		}
+		@include mq(desktop) {
+			padding-top: 65px;
+		}
+	}
 }
 
 .benefits__list {
+	--indent: 15px;
 	counter-reset: section;
+	padding: 19px 14px 19px 30px;
 	background-color: var(--bg-color-primary);
+	@include mq(tablet) {
+		--indent: 8px;
+		flex-direction: row;
+		padding: 26px 14px 30px 96px;
+	}
+	@include mq(desktop) {
+		--indent: 32px;
+		padding: 70px 14px 62px 114px;
+	}
 }
 
 .benefits__item {
@@ -20,5 +41,15 @@
 		color: var(--brand-color);
 		counter-increment: section;
 		content: "\268A 0"counter(section);
+	}
+	@include mq(tablet) {
+		--items: 2;
+
+		min-height: 69px;
+	}
+	@include mq(desktop) {
+		--items: 3;
+
+		font-size: 20px;
 	}
 }

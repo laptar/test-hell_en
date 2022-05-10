@@ -35,7 +35,6 @@
 	--indent: 15px;
 	counter-reset: section;
 	padding: 19px 14px 19px 30px;
-
 	background-color: var(--bg-color-primary);
 	@include mq(tablet) {
 		--indent: 8px;
@@ -56,13 +55,10 @@
 	line-height: 1.43;
 	&::before {
 		margin-bottom: 5px;
-		line-height: 1.21;
+		line-height: 1.65;
 		color: var(--brand-color);
 		counter-increment: section;
 		content: "\268A 0"counter(section);
-		@include mq(desktop) {
-			line-height: 1.65;
-		}
 	}
 	@include mq(tablet) {
 		--items: 2;

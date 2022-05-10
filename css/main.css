@@ -865,16 +865,10 @@ svg {
 
 .problems__item::before {
   margin-bottom: 5px;
-  line-height: 1.21;
+  line-height: 1.65;
   color: var(--brand-color);
   counter-increment: section;
   content: "⚊0" counter(section);
-}
-
-@media screen and (min-width: 1366px) {
-  .problems__item::before {
-    line-height: 1.65;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -895,9 +889,43 @@ svg {
   background-color: var(--bg-color-second);
 }
 
+.benefits__container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__container {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .benefits__container {
+    padding-top: 65px;
+  }
+}
+
 .benefits__list {
+  --indent: 15px;
   counter-reset: section;
+  padding: 19px 14px 19px 30px;
   background-color: var(--bg-color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    --indent: 8px;
+    flex-direction: row;
+    padding: 26px 14px 30px 96px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .benefits__list {
+    --indent: 32px;
+    padding: 70px 14px 62px 114px;
+  }
 }
 
 .benefits__item {
@@ -915,5 +943,19 @@ svg {
   color: var(--brand-color);
   counter-increment: section;
   content: "⚊0" counter(section);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    --items: 2;
+    min-height: 69px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .benefits__item {
+    --items: 3;
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
