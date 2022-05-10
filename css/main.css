@@ -103,125 +103,8 @@ svg {
   flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 33px;
-  padding-bottom: 33px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1365.98px) {
-  .header__container {
-    justify-content: flex-start;
-  }
-}
-
-.header__menu {
-  z-index: 5;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 767.98px) {
-  .header__menu {
-    align-items: flex-start;
-    position: fixed;
-    flex-direction: column;
-    padding: 108px 20px 20px 20px;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--bg-color-menu);
-    display: none;
-  }
-  .header__menu.is-open {
-    display: flex;
-    overflow-y: scroll;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (max-width: 767.98px) and (orientation: landscape) {
-  .header__menu {
-    padding: 20px 15px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1365.98px) {
-  .header__menu {
-    margin-left: auto;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (orientation: landscape) {
-  .logo-lendscape {
-    position: fixed;
-    top: 33px;
-    right: 60px;
-  }
-}
-
-.header__btn {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .header__btn {
-    margin: 0;
-  }
-}
-
-.menu-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  background-color: transparent;
-  fill: var(--btn-menu-color);
-}
-
-.menu-btn .menu-btn__icon--menu {
-  opacity: 1;
-}
-
-.menu-btn .menu-btn__icon--close {
-  opacity: 0;
-}
-
-.menu-btn.is-open .menu-btn__icon--menu {
-  opacity: 0;
-}
-
-.menu-btn.is-open .menu-btn__icon--close {
-  opacity: 1;
-  fill: var(--second-text-color);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1365.98px) {
-  .menu-btn {
-    margin-left: 34px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .menu-btn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (orientation: landscape) {
-  .menu-btn {
-    position: fixed;
-    right: 20px;
-    top: 40px;
-  }
-}
-
 .logo {
-  display: block;
+  display: inline-block;
   color: var(--title-text-color);
 }
 
@@ -571,6 +454,132 @@ svg {
 .callback__link-policy {
   color: var(--brand-color);
   text-decoration: underline;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365.98px) {
+  .header__container {
+    justify-content: flex-start;
+  }
+}
+
+.header__menu {
+  z-index: 5;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .header__menu {
+    align-items: flex-start;
+    position: fixed;
+    flex-direction: column;
+    padding: 108px 20px 20px 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-menu);
+    display: none;
+  }
+  .header__menu.is-open {
+    display: flex;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (max-width: 767.98px) and (orientation: landscape) {
+  .header__menu {
+    padding: 20px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365.98px) {
+  .header__menu {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (orientation: landscape) {
+  .logo-lendscape {
+    position: fixed;
+    top: 33px;
+    right: 60px;
+  }
+}
+
+.header__btn {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header__btn {
+    margin: 0;
+  }
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: transparent;
+  fill: var(--btn-menu-color);
+}
+
+.menu-btn .menu-btn__icon--menu {
+  opacity: 1;
+}
+
+.menu-btn .menu-btn__icon--close {
+  opacity: 0;
+}
+
+.menu-btn.is-open .menu-btn__icon--menu {
+  opacity: 0;
+}
+
+.menu-btn.is-open .menu-btn__icon--close {
+  opacity: 1;
+  fill: var(--second-text-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365.98px) {
+  .menu-btn {
+    margin-left: 34px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (orientation: landscape) {
+  .menu-btn {
+    position: fixed;
+    right: 20px;
+    top: 40px;
+  }
+}
+
+.hero__container {
+  padding-top: 50px;
+}
+
+.hero__btn {
+  display: block;
+  text-align: center;
 }
 
 .advant__container {
