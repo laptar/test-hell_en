@@ -1,5 +1,26 @@
 .problems {
-	background-color: var(--bg-color-second);
+	background-image: linear-gradient(
+		to bottom,
+		var(--bg-color-second) 545px,
+		var(--second-text-color) 545px
+	);
+	@include mq(tablet) {
+		background-image: linear-gradient(
+			to bottom,
+			var(--bg-color-second) 340px,
+			var(--second-text-color) 340px
+		);
+	}
+	@include mq(desktop) {
+		background-image: url(../../images/problems/bg_fire.png),
+			linear-gradient(
+				to bottom,
+				var(--bg-color-second) 560px,
+				var(--second-text-color) 560px
+			);
+		background-repeat: no-repeat;
+		background-position: right 29%;
+	}
 	&__container {
 		padding-top: 25px;
 		padding-bottom: 25px;
@@ -7,7 +28,8 @@
 			padding-top: 50px;
 		}
 		@include mq(desktop) {
-			padding-top: 65px;
+			padding-top: 100px;
+			padding-bottom: 65px;
 		}
 	}
 }
@@ -36,8 +58,9 @@
 	counter-reset: section;
 	padding: 19px 14px 19px 30px;
 	background-color: var(--bg-color-primary);
+	box-shadow: var(--box-shadow);
 	@include mq(tablet) {
-		--indent: 8px;
+		// --indent: 8px;
 		flex-direction: row;
 		padding: 26px 14px 30px 96px;
 	}

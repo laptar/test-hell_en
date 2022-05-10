@@ -1,14 +1,54 @@
+@import "../utils/visually-hidden";
+// import
+
 .benefits {
-	background-color: var(--bg-color-second);
+	background-image: linear-gradient(
+		to bottom,
+		var(--bg-color-second) 400px,
+		var(--second-text-color) 400px
+	);
+	@include mq(tablet) {
+		background-image: linear-gradient(
+			to bottom,
+			var(--bg-color-second) 300px,
+			var(--second-text-color) 300px
+		);
+	}
+	@include mq(desktop) {
+		background-image: linear-gradient(
+			to bottom,
+			var(--bg-color-second) 281px,
+			var(--second-text-color) 281px
+		);
+	}
 	&__container {
 		padding-top: 25px;
-		padding-bottom: 25px;
+		padding-bottom: 20px;
 		@include mq(tablet) {
-			padding-top: 50px;
+			padding-top: 95px;
+			padding-bottom: 25px;
 		}
 		@include mq(desktop) {
-			padding-top: 65px;
+			padding-top: 82px;
+			padding-bottom: 65px;
 		}
+	}
+}
+.benefits__title {
+	width: 180px;
+	margin-bottom: 30px;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 1.36;
+	letter-spacing: 0.03em;
+	color: var(--second-text-color);
+	@include mq(tablet) {
+		width: auto;
+		text-align: center;
+		font-size: 20px;
+	}
+	@include mq(desktop) {
+		@include visually-hidden;
 	}
 }
 
@@ -17,8 +57,9 @@
 	counter-reset: section;
 	padding: 19px 14px 19px 30px;
 	background-color: var(--bg-color-primary);
+	box-shadow: var(--box-shadow);
 	@include mq(tablet) {
-		--indent: 8px;
+		// --indent: 8px;
 		flex-direction: row;
 		padding: 26px 14px 30px 96px;
 	}

@@ -1,6 +1,10 @@
 .we-do__container {
-	padding-top: 50px;
+	padding-top: 25px;
 	padding-bottom: 50px;
+	@include mq(desktop) {
+		padding-top: 65px;
+		padding-bottom: 130px;
+	}
 }
 .we-do__list {
 	--indent: 15px;
