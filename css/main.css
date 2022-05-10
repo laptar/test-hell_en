@@ -677,4 +677,119 @@ svg {
     font-size: 20px;
   }
 }
+
+.we-do__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.we-do__list {
+  --indent: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .we-do__list {
+    --indent: 20px;
+  }
+}
+
+.we-do__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 280px;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  fill: var(--brand-color);
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .we-do__item {
+    --items: 2;
+    min-height: 334px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .we-do__item {
+    --items: 3;
+    min-height: 396px;
+  }
+}
+
+.we-do__item:hover, .we-do__item:focus {
+  fill: var(--second-text-color);
+  color: var(--second-text-color);
+  background-color: var(--brand-color);
+}
+
+.we-do__item:hover .we-do__item-text, .we-do__item:focus .we-do__item-text {
+  color: inherit;
+}
+
+.we-do__item-stress-text {
+  text-align: center;
+  padding-top: 20px;
+  min-height: 60px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@media screen and (min-width: 1366px) {
+  .we-do__item-stress-text {
+    font-size: 20px;
+    min-height: 77px;
+  }
+}
+
+.we-do__item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--primay-text-color);
+}
+
+.we-do__item-text::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  margin-bottom: 20px;
+  background-color: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .we-do__item-text::before {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .we-do__item-text::before {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .we-do__item-text {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .we-do__item-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
