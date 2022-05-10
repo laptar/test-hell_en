@@ -33,7 +33,6 @@
 
 .problems__list {
 	--indent: 15px;
-
 	padding: 19px 14px 19px 30px;
 	counter-reset: section;
 	background-color: var(--bg-color-primary);
@@ -48,17 +47,8 @@
 	}
 }
 .problems__item {
-	@include mq(tablet) {
-		--items: 2;
-	}
-	@include mq(desktop) {
-		--items: 3;
-	}
-}
-.problems__text {
 	display: flex;
 	flex-direction: column;
-	// max-width: 215px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.43;
@@ -73,11 +63,12 @@
 		}
 	}
 	@include mq(tablet) {
-		max-width: 215px;
+		--items: 2;
+
 		min-height: 69px;
 	}
 	@include mq(desktop) {
-		max-width: 336px;
+		--items: 3;
 
 		font-size: 20px;
 	}

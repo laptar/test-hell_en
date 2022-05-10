@@ -859,19 +859,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .problems__item {
-    --items: 2;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .problems__item {
-    --items: 3;
-  }
-}
-
-.problems__text {
+.problems__item {
   display: flex;
   flex-direction: column;
   font-weight: 700;
@@ -879,7 +867,7 @@ svg {
   line-height: 1.43;
 }
 
-.problems__text::before {
+.problems__item::before {
   margin-bottom: 5px;
   line-height: 1.21;
   color: var(--brand-color);
@@ -888,21 +876,21 @@ svg {
 }
 
 @media screen and (min-width: 1366px) {
-  .problems__text::before {
+  .problems__item::before {
     line-height: 1.65;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .problems__text {
-    max-width: 215px;
+  .problems__item {
+    --items: 2;
     min-height: 69px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .problems__text {
-    max-width: 336px;
+  .problems__item {
+    --items: 3;
     font-size: 20px;
   }
 }
