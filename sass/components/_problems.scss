@@ -48,6 +48,7 @@
 	}
 }
 .problems__item {
+	--items: 1;
 	display: flex;
 	flex-direction: column;
 	font-weight: 700;
