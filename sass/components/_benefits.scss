@@ -50,6 +50,8 @@
 }
 
 .benefits__list {
+	position: relative;
+	z-index: 1;
 	--indent: 15px;
 	counter-reset: section;
 	padding: 19px 14px 19px 30px;
