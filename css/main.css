@@ -467,6 +467,12 @@ svg {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .header__logo {
+    transform: translateX(-20px) scale(0.665);
+  }
+}
+
 .header__menu {
   z-index: 5;
   top: 0;
