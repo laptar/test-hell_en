@@ -91,7 +91,9 @@
 				top: 20px;
 				left: 5px;
 				background-color: var(--second-text-color);
-				@include mq(tablet-only) height: calc(100% + 30px);
+				@include mq(tablet-only) {
+					height: calc(100% + 30px);
+				}
 			}
 		}
 

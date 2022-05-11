@@ -921,6 +921,11 @@ svg {
     top: 20px;
     left: 5px;
     background-color: var(--second-text-color);
+  }
+}
+
+@media screen and (max-width: 1365.98px) and (min-width: 768px) and (max-width: 1365.98px) {
+  .program__item-smstr:not(:last-child)::before {
     height: calc(100% + 30px);
   }
 }
@@ -1228,7 +1233,6 @@ svg {
 
 .benefits__list {
   --indent: 15px;
-  z-index: 1;
   counter-reset: section;
   padding: 19px 14px 19px 30px;
   background-color: var(--bg-color-primary);
