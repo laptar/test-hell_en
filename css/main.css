@@ -831,6 +831,31 @@ svg {
   color: var(--second-text-color);
 }
 
+.program__title::after {
+  content: "";
+  position: absolute;
+  margin-right: 20px;
+  width: 176px;
+  height: 137px;
+  bottom: -270px;
+  left: 0;
+  background-image: url(../images/program/program_bg_photo.png);
+}
+
+@media screen and (min-width: 768px) {
+  .program__title::after {
+    width: 384px;
+    height: 280px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .program__title::after {
+    width: 672px;
+    height: 502px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .program__title {
     text-align: start;
@@ -872,6 +897,7 @@ svg {
 @media screen and (min-width: 1366px) {
   .program__list-smstr {
     flex-direction: row;
+    padding-left: 0;
   }
 }
 
@@ -927,15 +953,24 @@ svg {
 
 @media screen and (min-width: 1366px) {
   .program__title-smstr::before {
-    margin-right: 0;
-    margin-bottom: 52px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: -3px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .program__title-smstr {
-    flex-direction: column;
-    align-items: start;
+    align-items: baseline;
+    margin-top: 52px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .program__title-smstr--numb {
+    font-size: 30px;
   }
 }
 
@@ -966,6 +1001,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .smstr__item {
+    min-width: 240px;
+  }
+}
+
 .smstr__title-topic {
   display: inline-flex;
   align-items: center;
@@ -985,6 +1026,12 @@ svg {
   background-color: var(--brand-color);
 }
 
+@media screen and (min-width: 1366px) {
+  .smstr__title-topic {
+    font-size: 20px;
+  }
+}
+
 .topic__item {
   font-weight: 500;
   font-size: 12px;
@@ -992,6 +1039,12 @@ svg {
   letter-spacing: 0.08em;
   color: var(--primay-text-color);
   opacity: 0.5;
+}
+
+@media screen and (min-width: 1366px) {
+  .topic__item {
+    font-size: 18px;
+  }
 }
 
 .problems {
@@ -1105,19 +1158,6 @@ svg {
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .benefits {
   background-image: linear-gradient(to bottom, var(--bg-color-second) 400px, var(--second-text-color) 400px);
 }
@@ -1188,6 +1228,7 @@ svg {
 
 .benefits__list {
   --indent: 15px;
+  z-index: 1;
   counter-reset: section;
   padding: 19px 14px 19px 30px;
   background-color: var(--bg-color-primary);
