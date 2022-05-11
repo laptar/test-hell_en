@@ -1358,13 +1358,7 @@ svg {
   background-size: contain;
   margin-top: 5px;
   margin-right: 9px;
-  background-image: url(../images/about/icon-cheack.png);
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .about__item::before {
-    background-image: url(../images/about/icon-cheack@2x.png);
-  }
+  background-image: url(../images/about/icon-cheac.svg);
 }
 
 @media screen and (min-width: 1366px) {

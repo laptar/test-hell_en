@@ -81,10 +81,7 @@
 		background-size: contain;
 		margin-top: 5px;
 		margin-right: 9px;
-		background-image: url(../images/about/icon-cheack.png);
-		@include mq(retina) {
-			background-image: url(../images/about/icon-cheack@2x.png);
-		}
+		background-image: url(../images/about/icon-cheac.svg);
 		@include mq(desktop) {
 			width: 25px;
 			height: 20px;
