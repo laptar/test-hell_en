@@ -1,0 +1,50 @@
+// .slick-slider{
+
+//     position: relative;
+// }
+.slick-list {
+  width: 1090px;
+}
+// .slick-dots {
+//   display: flex;
+// }
+.slick-dots {
+  display: flex;
+}
+
+.slick-prev {
+  // position: absolute;
+  //   top: 50%;
+  //   left: -15px;
+  width: 25px;
+  height: 16px;
+
+  color: transparent;
+  background-color: transparent;
+
+  background-image: url(../images/icon/arow.svg);
+
+  @include mq(tablet) {
+    //   left: 26px;
+  }
+}
+.slick-next {
+  //   position: absolute;
+  //   top: 50%;
+
+  width: 25px;
+  height: 16px;
+  //   right: -15px;
+
+  color: transparent;
+  background-color: transparent;
+
+  background-image: url(../images/icon/arow.svg);
+
+  transform: rotate(180deg);
+  // right: 400px;
+
+  @include mq(tablet) {
+    //   left: 26px;
+  }
+}
