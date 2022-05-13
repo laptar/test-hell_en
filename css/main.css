@@ -834,7 +834,7 @@ svg {
   width: 176px;
   height: 137px;
   bottom: -70px;
-  right: 0px;
+  right: 0;
   background-size: contain;
   background-image: url(../images/program/program_bg_photo.png);
 }
