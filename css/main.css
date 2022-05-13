@@ -831,11 +831,12 @@ svg {
 .program__container::before {
   content: "";
   position: absolute;
-  width: 176px;
+  width: 120px;
   height: 137px;
   bottom: -70px;
   right: 0;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(../images/program/program_bg_photo.png);
 }
 
